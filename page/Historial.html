@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/1.jpg">
+    <title>Historia Clínica - Hospital San Rafael</title>
+</head>
+<body>
+    <!--CABECERA-->
+    <header>
+        <h1 style="text-align: center;">Hospital General San Rafael</h1>
+        <p style="text-align: center;">Cuidando tu salud y la de tu familia las 24 horas</p>
+    </header>
+
+    <!--NAVEGACION-->
+    <nav>
+        <a href="/index.html">Home</a>
+        <a href="/page/Historial.html">Historia Clínica</a>
+        <a href="/index.html#servicios">Servicios</a>
+        <a href="/index.html#contacto">Contacto</a>
+    </nav>
+    <hr>
+
+    <h2 style="text-align: center;">Registro de Historia Clínica</h2>
+
+    <form action="#">
+        <!-- 12 CAMPOS VISTOS EN CLASE -->
+
+        <!-- 1. Text -->
+        <label for="nombre">1. Ingrese los nombres y apellidos del paciente:</label>
+        <br><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez">
+        <br><br>
+
+        <!-- 2. Text (Cédula) -->
+        <label for="cedula">2. Ingrese su número de cédula:</label>
+        <br><br>
+        <input type="text" id="cedula" name="cedula" placeholder="Ej. 1712345678">
+        <br><br>
+
+        <!-- 3. Email -->
+        <label for="email">3. Ingrese su correo electrónico:</label>
+        <br><br>
+        <input type="email" id="email" name="email" placeholder="paciente@correo.com">
+        <br><br>
+
+        <!-- 4. Password -->
+        <label for="password">4. Cree una clave para consultar sus resultados:</label>
+        <br><br>
+        <input type="password" id="password" name="password" placeholder="****">
+        <br><br>
+
+        <!-- 5. Date -->
+        <label for="fecha_nacimiento">5. Ingrese su fecha de nacimiento:</label>
+        <br><br>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+        <br><br>
+
+        <!-- 6. Time -->
+        <label for="hora_ingreso">6. Hora de ingreso a consulta:</label>
+        <br><br>
+        <input type="time" id="hora_ingreso" name="hora_ingreso">
+        <br><br>
+
+        <!-- 7. Tel -->
+        <label for="telefono">7. Ingrese su teléfono de contacto:</label>
+        <br><br>
+        <input type="tel" id="telefono" name="telefono" placeholder="0991234567">
+        <br><br>
+
+        <!-- 8. Number -->
+        <label for="edad">8. Edad del paciente (en años):</label>
+        <br><br>
+        <input type="number" id="edad" name="edad" placeholder="Ej. 25">
+        <br><br>
+
+        <!-- 9. Radio -->
+        <label>9. Género:</label>
+        <br><br>
+        <label for="masculino"><input type="radio" id="masculino" name="genero" value="masculino">Masculino</label>
+        <label for="femenino"><input type="radio" id="femenino" name="genero" value="femenino">Femenino</label>
+        <label for="otro"><input type="radio" id="otro" name="genero" value="otro">Otro</label>
+        <br><br>
+
+        <!-- 10. Checkbox -->
+        <label>10. Antecedentes médicos:</label>
+        <br><br>
+        <label for="diabetes"><input type="checkbox" id="diabetes" name="antecedentes" value="diabetes">Diabetes</label>
+        <label for="hipertension"><input type="checkbox" id="hipertension" name="antecedentes" value="hipertension">Hipertensión</label>
+        <label for="alergias"><input type="checkbox" id="alergias" name="antecedentes" value="alergias">Alergias</label>
+        <label for="ninguno"><input type="checkbox" id="ninguno" name="antecedentes" value="ninguno">Ninguno</label>
+        <br><br>
+
+        <!-- 11. Select -->
+        <label for="ciudad">11. Ciudad de residencia:</label>
+        <br><br>
+        <select name="ciudad" id="ciudad">
+            <option value="seleccionar" disabled selected>Seleccionar</option>
+            <option value="quito">Quito</option>
+            <option value="latacunga">Latacunga</option>
+            <option value="ibarra">Ibarra</option>
+            <option value="cuenca">Cuenca</option>
+            <option value="guayaquil">Guayaquil</option>
+            <option value="otro">Otro</option>
+        </select>
+        <br><br>
+
+        <!-- 12. Textarea -->
+        <label for="sintomas">12. Ingrese el motivo de consulta y síntomas:</label>
+        <br><br>
+        <textarea name="sintomas" id="sintomas" rows="4" cols="50" placeholder="Describa los síntomas del paciente"></textarea>
+        <br><br>
+
+        <!-- 12b / Adicional visto en clase: File -->
+        <label for="foto">Adjuntar examen médico o cédula:</label>
+        <br><br>
+        <input type="file" id="foto" name="foto">
+        <br><br>
+
+    </form>
+</body>
+</html>
